@@ -112,7 +112,13 @@ import AVFoundation
         self.gridView?.frame = self.bounds
         
         if self.autorotate {
-            self.previewLayer?.connection?.videoOrientation = UIDevice.current.orientation.videoOrientation
+//            self.previewLayer?.connection?.videoOrientation = UIDevice.current.orientation.videoOrientation
+            self.previewLayer?.connection?.videoOrientation = UIApplication.interfaceOrientation().videoOrientation
         }
+    }
+    
+    public func updateOrientation() {
+//        self.previewLayer?.connection?.videoOrientation = UIDevice.current.orientation.videoOrientation
+        self.previewLayer?.connection?.videoOrientation = UIApplication.interfaceOrientation().videoOrientation
     }
 }

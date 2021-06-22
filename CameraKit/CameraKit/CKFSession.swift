@@ -8,10 +8,25 @@
 
 import AVFoundation
 
+public extension UIInterfaceOrientation {
+    var videoOrientation: AVCaptureVideoOrientation {
+        switch self {
+        case .portraitUpsideDown:
+            return .portraitUpsideDown
+        case .landscapeLeft:
+            return .landscapeLeft
+        case .landscapeRight:
+            return .landscapeRight
+        default:
+            return .portrait
+        }
+    }
+}
+
 public extension UIDeviceOrientation {
     
     var videoOrientation: AVCaptureVideoOrientation {
-        switch UIDevice.current.orientation {
+        switch self {
         case .portraitUpsideDown:
             return .portraitUpsideDown
         case .landscapeLeft:

@@ -17,6 +17,7 @@
 		3AD9373221E53B97006A8C86 /* CameraKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AD9372421E53B97006A8C86 /* CameraKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AD9375F21E53F81006A8C86 /* CKFPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9375C21E53C61006A8C86 /* CKFPreviewView.swift */; };
 		3ADDEE7921E75A4E00EEF063 /* CKFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADDEE7821E75A4E00EEF063 /* CKFError.swift */; };
+		B1033CBA2681CBCE00E0CE34 /* UIApplication+InterfaceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1033CB92681CBCE00E0CE34 /* UIApplication+InterfaceOrientation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		3AD9373121E53B97006A8C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AD9375C21E53C61006A8C86 /* CKFPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKFPreviewView.swift; sourceTree = "<group>"; };
 		3ADDEE7821E75A4E00EEF063 /* CKFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKFError.swift; sourceTree = "<group>"; };
+		B1033CB92681CBCE00E0CE34 /* UIApplication+InterfaceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+InterfaceOrientation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				3A4E8BCE21F8E8D600CAC6F2 /* CKFUtils.swift */,
 				3AD9372421E53B97006A8C86 /* CameraKit.h */,
 				3AD9372521E53B97006A8C86 /* Info.plist */,
+				B1033CB92681CBCE00E0CE34 /* UIApplication+InterfaceOrientation.swift */,
 			);
 			path = CameraKit;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				3AC2453521E62AD600785FB2 /* CKFVideoSession.swift in Sources */,
 				3ADDEE7921E75A4E00EEF063 /* CKFError.swift in Sources */,
 				3A76E33D21E549B800C8461D /* CKFSession.swift in Sources */,
+				B1033CBA2681CBCE00E0CE34 /* UIApplication+InterfaceOrientation.swift in Sources */,
 				3AD9375F21E53F81006A8C86 /* CKFPreviewView.swift in Sources */,
 				3A47096321F21173004F4B8D /* CKFGridView.swift in Sources */,
 				3A4E8BCF21F8E8D600CAC6F2 /* CKFUtils.swift in Sources */,

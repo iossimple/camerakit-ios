@@ -113,7 +113,8 @@ extension CKFSession.FlashMode {
             if self.resolution.width > 0, self.resolution.height > 0 {
                 connection.videoOrientation = .portrait
             } else {
-                connection.videoOrientation = UIDevice.current.orientation.videoOrientation
+//                connection.videoOrientation = UIDevice.current.orientation.videoOrientation
+                connection.videoOrientation = UIApplication.interfaceOrientation().videoOrientation
             }
         }
         

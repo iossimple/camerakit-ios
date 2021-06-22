@@ -141,6 +141,7 @@ class PhotoViewController: UIViewController, CKFSessionDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.previewView.updateOrientation()
         self.previewView.session?.start()
     }
     
