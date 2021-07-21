@@ -62,6 +62,12 @@ extension CKFSession.FlashMode {
         }
     }
     
+    public var supportedFlashModes: [CKFSession.FlashMode] {
+        return CKFSession.FlashMode.allCases.filter {
+            photoOutput.supportedFlashModes.contains($0.captureFlashMode)
+        }
+    }
+    
     @objc public var flashMode = CKFSession.FlashMode.off
     
     var captureDeviceInput: AVCaptureDeviceInput? {

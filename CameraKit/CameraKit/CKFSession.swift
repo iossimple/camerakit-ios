@@ -96,7 +96,7 @@ extension CKFSession.CameraPosition {
         case front, back
     }
     
-    @objc public enum FlashMode: UInt {
+    @objc public enum FlashMode: UInt, CaseIterable {
         case off, on, auto
     }
     
